@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<title>Пейнтбол в Алматы Южный Крест. Игра в Paintball, Лазертаг Алматы.</title>
+	<link rel="stylesheet" href="slick/slick.css"/>
+	<link rel="stylesheet" href="slick/slick-theme.css"/>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link href="img/icons/advantage1.png" rel="shortcut icon" type="image/x-icon" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link href="css/hamburgers.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="lib/magnific-popup/magnific-popup.css">
+	<link rel="stylesheet" href="lib/PhotoSwipe/photoswipe.css">
+	<link rel="stylesheet" href="lib/PhotoSwipe/default-skin/default-skin.css">
+	<link rel="stylesheet"  href="lib/fancybox/jquery.fancybox.min.css" />
+	<link href="lib/emoji.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media-queries.css">
+</head>
+<body>
+	<div class="form-call-wrapper">
+		<div class="form-call">
+			<div class="form-exist">
+				<i class="far form-exist__img fa-times-circle" id="exist-call"></i>
+			</div>
+			<form id="callbackForm">
+
+				<input type="hidden" name="project_name" value="Paintball">
+				<input type="hidden" name="admin_email" value="feroxdancer@mail.ru">
+				<input type="hidden" name="email_from" value="info@paintball-almaty.kz">
+				<input type="hidden" name="form_subject" value="Новая заявка с сайта paintball-almaty.kz">
+
+				<input type="text" name="Имя" class="form-input-call" placeholder="Имя" required>
+				<input type="email" name="Email" class="form-input-call" placeholder="Email" required>
+				<input type="text" id="phone" name="Телефон" class="form-input-call phone" placeholder="Контактный телефон" required>
+				<button type="submit" class="form-btn-call">Отправить сообщение</button>
+
+			</form>
+		</div>
+	</div>
+	<div class="go-home-wrapper">
+		<a href="#home" class="go-home a-archer">
+			<i class="fas fa-chevron-up"></i>
+		</a>
+	</div>
+	<div class="form-success-wrapper">
+		<div class="form-success">
+			<div class="form-exist">
+				<i class="far form-exist__img fa-times-circle" id="icon-exist-form"></i>
+			</div>
+			<div class="form-logo">
+				<img src="img/icons/advantage1.png" />
+			</div>
+			<p class="form-success__p">Заявка успешно отправлена!</p>
+
+		</div>
+	</div>
+	<header id="home">
+		<div class="glitch__img"></div>
+		<div class="glitch__img"></div>
+		<div class="glitch__img"></div>
+		<div class="glitch__img"></div>
+		<div class="glitch"></div>
+		<div class="header-top container" >
+			<div class="logo" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+				<img class="logo-img" src="img/logotip.png" alt="Пейнтбольный клуб в Алматы">
+			</div>
+			<div class="topHeaderMenu" data-aos="fade-down" data-aos-duration="1000">
+				<div class="header-icons">
+                    <a target="_blank" href="https://www.instagram.com/paintball.almaty/">
+						<i class="fab link fa-instagram"></i>
+					</a>
+					<a target="_blank" href="https://api.whatsapp.com/send?phone=77003001010">
+						<i class="fab link fa-whatsapp"></i>
+					</a>
+				</div>
+				<div class="header-address">
+					<div class="header-address-left">
+						<i class="fas fa-map-marker-alt"></i>
+					</div>
+					<div class="header-address-right">
+						<p class="header-p3">Адрес</p>
+						<a class="a-archer header-p2" href="#map">г. Алматы, мкр. Кулагер, Омарова 47а</a>
+					</div>
+				</div>
+				<div class="header-phone">
+					<div class="header-phone-left">
+						<img class="header-ic" src="img/icons/call-header.svg">
+						<img class="header-ic" src="img/icons/whatsapp-header.svg">
+					</div>
+					<div class="header-phone-right">
+						<p class="header-p3">Телефон</p>
+						<a href="tel:+77019908591" class="header-p-phone">+7 701 990 85 91</a>
+						<a href="tel:+77003001010" class="header-p-phone" target="_blank">+7 700 300 10 10 (whatsapp)</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-mid container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+			<div class="header-text">
+				<h1 class="header-h1" data-text="Пейнтбольный клуб в Алматы">Пейнтбольный клуб в Алматы</h1>
+				<h2 class="header-h2">Почувствуй адреналин атмосферных сражений</h2>
+				<div class="header-btn">
+					<div class="header-btn-p header-btn-p-white callme">Оставить заявку</div>
+					<a href="#sert" class="a-archer"><div class="header-btn-p button-jittery">Подарочный сертификат</div></a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="info" id="service">
+			<!-- <img src="img/ball1.png" class="ball1">
+			<div class="line line1">
+				<span class="circle circle-top"></span>
+				<div class="dotted">
+					<span class="dot dot-top"></span>
+					<span class="dot dot-middle-top"></span>
+					<span class="dot dot-middle-bottom"></span>
+					<span class="dot dot-bottom"></span>
+				</div>
+			</div>
+			-->
+			<div class="container">
+				<div class="info-1" data-aos="fade-up" data-aos-duration="1000">
+					<h2 class="info-h2">«ЮЖНЫЙ КРЕСТ»<br>ПЕЙНТБОЛ-<a href="#laser" class="laser a-archer">ЛАЗЕРТАГ</a> КЛУБ</h2>
+					<div class="info-flex">
+						<div class="info-left">
+							<p class="info-p-bold info-p">
+								Нужна идея как необычно и интересно отдохнуть, активно провести время, день рождение или просто собраться компанией друзей? </p>
+							<p class="info-p">Первое, что приходит в голову, это кафе или выезд на природу, но  можно все это объединить, активными развлечениями на свежем воздухе, усилить впечатление необычной обстановкой и интересными заданиями, плюс  добавить по вкусу адреналин и подать яркие эмоции под разными соусами.
+							</p>
+							<p class="info-p">Все, от офисного работника до любителей активного отдыха и спортивных развлечений будут рады такой возможности раскрасить свои будни новыми эмоциями и цветными шариками, а после игры послушать занимательные рассказы, как кто-то покрасил 7 человек, хотя играло всего 5 <img class="emoji" src="img/icons/emoji1.png"/>
+							</p>
+							<p class="info-p">
+								Также,  на игровом поле вас ждет встреча с любимыми героями из фильмов - Терминатор, Хэнкок, Дункан Маклауд…. поверьте такой человек всегда найдется в большой компании <img class="emoji" src="img/icons/emoji2.png"/>
+							</p>
+							<p class="info-p">И так все это возможно только на игре в пейнтбол, а Клуб "Южный Крест" - лучшее решение!
+							</p>
+							<p class="info-p">Создатель клуба являлся многократным победителем спортивных и тактических пейнтбольных чемпионатов за рубежом.
+							</p>
+							<!--
+							<p class="info-p">
+<span class="red">Пейнтбольный Клуб "Южный Крест"</span> - лучшее решение!
+							</p>
+                            <p class="info-p">Для любителей активного отдыха и спортивных развлечений, ПЕЙНТБОЛ – просто подарок судьбы. Наш пейнтбольный клуб подарит Вам массу ярких положительных эмоций и впечатлений, позволит отдохнуть и зарядиться энергией на всю рабочую неделю. Стоит лишь однажды побывать участником игры в пейнтбол, и Вы обязательно станете её поклонником.</p>
+                            <p class="info-p">Пейнтбол не имеет ограничений по полу и возрасту, и приносит всем игрокам только положительные эмоции, снимает стресс, помогает расслабиться и отдохнуть от бытовых и рабочих проблем.</p>
+                            <p class="info-p"><span class="red">Пейнтбольный Клуб "Южный Крест"</span> возглавляет профессиональный инструктор, который являлся участником и призёром спортивных и тактических пейнтбольных турниров.</p>
+-->
+						</div>
+						<div class="info-right">
+                            <video controls="controls">
+                                <source src="move/move1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                            </video>
+							<video controls="controls">
+                                <source src="move/move2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                            </video>
+							<video controls="controls">
+                                <source src="v.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                            </video>
+						</div>
+					</div>
+				</div>
+				<div class="info-3" data-aos="fade-up" data-aos-duration="1000">
+					<h3 class="info-h3">
+							Несколько фактов:
+					</h3>
+					<div class="info-text">
+						<ul>
+							<li><span>Первый клуб в Алмате популяризирующий  пейнтбол, как спорт (с тренировками игроков и посещение зарубежных чемпионатов)</span></li>
+							<li><span>Чемпионы Казахстана 2016 года</span></li>
+							<li><span>Клуб впервые представлял Казахстан на чемпионате мира в Париже в 2012 году</span></li>
+							<li><span>Руководитель клуба Играл на чемпионатах по пейнтболу в Европе, Сингапуре, Индии и России</span></li>
+							<li><span>Магазин пейнтбольного снаряжения в наличии и на заказ</span></li>
+							<li><span>Собственный сервис по <a class="a-archer" href="#remont">ремонту и обслуживанию</a> пейнтбольного снаряжения</span></li>
+							<li><span>С 2013 года Дилер Мирового брэнда пейнтбольной индустрии - Dye</span></li>
+							<li><span>Работаем круглый год по записи без перерывов и выходных</span></li>
+							<li><span>Более <span class="red">25000</span> клиентов доверили нам свой отдых</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="info-2" >
+					<div class="info-2-left" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<h2 class="info-h2 info-h2-center">
+							Преимущества нашего клуба
+						</h2>
+                        <div class="info-2-flex">
+                            <div class="info-2-right-column-item">
+                                <div class="info-icon-wrapper">
+                                    <img class="info-icon" src="img/icons/advantage1.png" alt="Преимущество">
+                                </div>
+                                <div class="info-icon-row">
+                                    <p class="info-icon-p3">Продвинутое оборудование</p>
+                                    <p class="info-icon-p">Топовое оборудование для комфортной игры</p>
+                                </div>
+                            </div>
+                            <div class="info-2-right-column-item">
+                                <div class="info-icon-wrapper">
+                                    <img class="info-icon" src="img/icons/advantage2.png" alt="Преимущество">
+                                </div>
+                                <div class="info-icon-row">
+                                    <p class="info-icon-p3">Опытные инструктора</p>
+                                    <p class="info-icon-p">Наши инструктора призёры спортивных и тактических пейнтбольных турниров</p>
+                                </div>
+                            </div>
+                            <div class="info-2-right-column-item">
+								<div class="info-icon-wrapper">
+                                    <img class="info-icon" src="img/icons/advantage8.svg" alt="Преимущество">
+                                </div>
+                                <div class="info-icon-row">
+                                    <p class="info-icon-p3">Качественные костюмы</p>
+                                    <p class="info-icon-p"> Качественные игровые костюмы пошитые из хлопка специально для пейнтбола</p>
+                                </div>
+								<!--
+                                <div class="info-icon-wrapper">
+                                    <img class="info-icon" src="img/icons/advantage3.png" alt="Преимущество">
+                                </div>
+                                <div class="info-icon-row">
+                                    <p class="info-icon-p3">Автоматическое оружие</p>
+                                    <p class="info-icon-p">Долой механику, только автоматическое оружие</p>
+                                </div>
+-->
+                            </div>
+                            <div class="info-2-right-column-item">
+                                <div class="info-icon-wrapper">
+                                    <img class="info-icon" src="img/icons/advantage4.png" alt="Преимущество">
+                                </div>
+                                <div class="info-icon-row">
+                                    <p class="info-icon-p3">Большая площадка в городе</p>
+                                    <p class="info-icon-p">Площадь для игры 10000 м<sup><small>2</small></sup></p>
+                                </div>
+                            </div>
+                        </div>
+						<div class="info-2-flex">
+                            <div class="info-2-right-column-item">
+                                <div class="info-icon-wrapper">
+                                    <img class="info-icon" src="img/icons/advantage5.svg" alt="Преимущество">
+                                </div>
+                                <div class="info-icon-row">
+                                    <p class="info-icon-p3">Ночной пэйнтбол</p>
+                                    <p class="info-icon-p">Наслаждаться игрой даже в ночное время</p>
+                                </div>
+                            </div>
+                            <div class="info-2-right-column-item">
+                                <div class="info-icon-wrapper">
+                                    <img class="info-icon" src="img/icons/advantage6.svg" alt="Преимущество">
+                                </div>
+                                <div class="info-icon-row">
+                                    <p class="info-icon-p3">Бесплатная зона отдыха</p>
+                                    <p class="info-icon-p">Столы, навесы, мангалы, волейбол</p>
+                                </div>
+                            </div>
+                            <div class="info-2-right-column-item">
+                                <div class="info-icon-wrapper">
+                                    <img class="info-icon" src="img/icons/advantage7.svg" alt="Преимущество">
+                                </div>
+                                <div class="info-icon-row">
+                                    <p class="info-icon-p3">Работаем без выходных</p>
+                                    <p class="info-icon-p">Работаем круглый год по записи без перерывов и выходных</p>
+                                </div>
+                            </div>
+                            <div class="info-2-right-column-item">
+                                <div class="info-icon-wrapper">
+                                    <img class="info-icon" src="img/icons/confetti.svg" alt="Преимущество">
+                                </div>
+                                <div class="info-icon-row">
+                                    <p class="info-icon-p3">Выездные игры и корпоративы</p>
+                                    <p class="info-icon-p">Проведение выездных игр и корпоративов</p>
+                                </div>
+                            </div>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="place">
+			<div class="place-wrapper container">
+				<div class="place-left" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+					<h2 class="place-h2">Наша площадка</h2>
+					<p class="place-p">Зона отдыха игроков снабжена шатрами, навесами, столами, стульями. Есть мангал для барбекю и шашлыка. Еду и напитки можете приносить с собой, вы платите только за пейнтбол или <a class="a-archer laser" href="#laser">лазертаг</a>. Размещение на базе отдыха бесплатно. Также бесплатно после пейнтбола вы можете поиграть в бадминтон, фризби, волейбол и т.д. </p>
+					<div class="place-icons">
+						<div class="place-icons-item">
+							<img src="img/icons/place1.png" alt="Наша площадка">
+							<p class="place-icons-p">Большая площадка в городе 10 000 м<sup><small>2</small></sup></p>
+						</div>
+						<div class="place-icons-item">
+							<img src="img/icons/place2.png" alt="Наша площадка">
+							<p class="place-icons-p">Огромное количество интересных объектов.</p>
+						</div>
+						<div class="place-icons-item">
+							<img src="img/icons/place4.svg" alt="Наша площадка">
+							<p class="place-icons-p">Уникальное игровое поле с различными сценариями и строениями (машины, вышка, блиндаж, лес, бочки).</p>
+						</div>
+						<div class="place-icons-item">
+							<img src="img/icons/place3.png" alt="Наша площадка">
+							<p class="place-icons-p">Удобное месторасположение. Не нужно далеко ехать за эмоциями и отдыхом.</p>
+						</div>
+					</div>
+
+					<p class="place-p">Если отмечаете день рождение, то именинник  получает подарки от клуба, либо это бесплатный прокат оборудования под М16 или другие маркера с улучшенными характеристиками, либо прокат оборудования и боекомплект из шариков. Размер подарка уточняйте по телефону.</p>
+					<p  class="place-p place-p-img" data-fancybox="paintball" data-src="img/photo/paintball1.jpg">Галерея пэйнтбол
+						</p>
+				</div>
+				<div class="place-right">
+					<a class="image-popup-no-margins2" >
+						<img class="place-right-img" src="img/photo/placeRigth1.png" alt="" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200" data-fancybox="paintball" data-src="img/photo/placeRigth1.png">
+					</a>
+					<a class="image-popup-no-margins2" >
+						<img class="place-right-img" src="img/photo/placeRigth2.png" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-fancybox="paintball" data-src="img/photo/placeRigth2.png">
+					</a>
+					<a class="image-popup-no-margins2" >
+						<img class="place-right-img" src="img/photo/placeRigth3.png" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" >
+					</a>
+					<a class="image-popup-no-margins2" >
+						<img class="place-right-img" src="img/photo/placeRigth4.png" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-fancybox="paintball" data-src="img/photo/paintball8.jpg">
+					</a>
+					<a class="image-popup-no-margins2" >
+						<img class="place-right-img" src="img/photo/placeRigth5.png" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"  data-src="img/photo/placeRigth5.png">
+					</a>
+					<a class="image-popup-no-margins2" >
+						<img class="place-right-img" src="img/photo/placeRigth6.png" alt="" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200" >
+					</a>
+					<img class="place-right-img" src="img/box.png" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+					<img class="place-right-img" src="img/box.png" alt="" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1000">
+					<img class="place-right-img" src="img/box.png" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+
+
+					<span class="none" data-fancybox="paintball" data-src="img/photo/paintball2.jpg"></span>
+					<span class="none" data-fancybox="paintball" data-src="img/photo/paintball3.jpg"></span>
+					<span class="none" data-fancybox="paintball" data-src="img/photo/paintball4.jpg"></span>
+					<span class="none" data-fancybox="paintball" data-src="img/photo/paintball5.jpg"></span>
+					<span class="none" data-fancybox="paintball" data-src="img/photo/paintball6.jpg"></span>
+					<span class="none" data-fancybox="paintball" data-src="img/photo/paintball7.jpg"></span>
+					<span class="none" data-fancybox="paintball" data-src="img/photo/paintball8.jpg"></span>
+				</div>
+			</div>
+		</section>
+		<section class="price">
+			<div class="price-wrapper container">
+				<div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+					<h2 class="info-h2">
+						Наши цены
+					</h2>
+					<p class="info-p">
+						Несмотря на преимущества и комфортабельность клуба, цены полностью <span>Доступные</span> и конкурентные + всегда найдутся интересные дополнительные развлечения и бесплатные бонусы.
+					</p>
+					<p class="info-p">
+						Позвоните и узнайте, что у нас есть для вас.
+					</p>
+
+					<div class="price-a-wrapper">
+						<div class="price-a">
+							<img class="header-ic" src="img/icons/call-header.svg">
+							<a href="tel:+77019908591" class="price-p-phone">Позвонить</a>
+						</div>
+						<div class="price-a">
+							<img class="header-ic" src="img/icons/whatsapp-header.svg">
+							<a href="https://api.whatsapp.com/send?phone=77003001010" class="price-p-phone" target="_blank">Написать</a>
+						</div>
+					</div>
+
+				</div>
+				<!--
+				<div class="price-blocks">
+					<div class="price-colomn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<div class="price-icon">
+							<img src="img/icons/price1.png" alt="">
+						</div>
+						<h3 class="price-h3">Стартовый тариф</h3>
+						<div class="price-info">
+							<div class="price-row">
+								<div class="price-info-item">
+									<i class="fas fa-check-circle"></i>
+									<p class="company-info-p">100 патронов</p>
+								</div>
+								<div class="price-info-item">
+									<i class="fas fa-check-circle"></i>
+									<p class="company-info-p">Автомат</p>
+								</div>
+							</div>
+							<div class="price-row">
+								<div class="price-info-item">
+									<i class="fas fa-check-circle"></i>
+									<p class="company-info-p">Маска</p>
+								</div>
+								<div class="price-info-item">
+									<i class="fas fa-check-circle"></i>
+									<p class="company-info-p">Камуфляж</p>
+								</div>
+							</div>
+						</div>
+						<div class="price-p">
+							<p>Дополнительно вы можете приобрести 100 патронов на сумму 2000 т</p>
+						</div>
+						<div class="price-money">
+							<div class="price-money-item">
+								<p class="price-block-p3">2 500 T</p>
+								<p class="price-block-p">
+									Будние дни
+								</p>
+							</div>
+							<div class="price-money-item">
+								<p class="price-block-p3">3 000 T</p>
+								<p class="price-block-p">
+									Будние дни
+								</p>
+							</div>
+						</div>
+						<div class="price-btn-wrapper">
+							<div class="price-btn-2 callme">Заказать</div>
+						</div>
+					</div>
+					<div class="price-colomn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+						<div class="price-icon">
+							<img src="img/icons/price3.png" alt="">
+						</div>
+						<h3 class="price-h3">Стартовый тариф</h3>
+						<div class="price-info">
+							<div class="price-row">
+								<div class="price-info-item">
+									<i class="fas fa-check-circle"></i>
+									<p class="company-info-p">100 патронов</p>
+								</div>
+								<div class="price-info-item">
+									<i class="fas fa-check-circle"></i>
+									<p class="company-info-p">Автомат</p>
+								</div>
+							</div>
+							<div class="price-row">
+								<div class="price-info-item">
+									<i class="fas fa-check-circle"></i>
+									<p class="company-info-p">Маска</p>
+								</div>
+								<div class="price-info-item">
+									<i class="fas fa-check-circle"></i>
+									<p class="company-info-p">Камуфляж</p>
+								</div>
+							</div>
+						</div>
+						<div class="price-p">
+							<p>Дополнительно вы можете приобрести 100 патронов на сумму 2000 т</p>
+						</div>
+						<div class="price-money">
+							<div class="price-money-item">
+								<p class="price-block-p3">2 500 T</p>
+								<p class="price-block-p">
+									Будние дни
+								</p>
+							</div>
+							<div class="price-money-item">
+								<p class="price-block-p3">3 000 T</p>
+								<p class="price-block-p">
+									Будние дни
+								</p>
+							</div>
+						</div>
+						<div class="company-price">
+							<div class="company-price-btn-2 callme">Заказать</div>
+						</div>
+					</div>
+					<div class="price-colomn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<div class="price-icon">
+							<img src="img/icons/price3.png" alt="">
+						</div>
+						<h3 class="price-h3">Стартовый тариф</h3>
+						<div class="price-info">
+							<div class="price-row">
+								<div class="price-info-item">
+									<i class="fas fa-check-circle"></i>
+									<p class="company-info-p">100 патронов</p>
+								</div>
+								<div class="price-info-item">
+									<i class="fas fa-check-circle"></i>
+									<p class="company-info-p">Автомат</p>
+								</div>
+							</div>
+							<div class="price-row">
+								<div class="price-info-item">
+									<i class="fas fa-check-circle"></i>
+									<p class="company-info-p">Маска</p>
+								</div>
+								<div class="price-info-item">
+									<i class="fas fa-check-circle"></i>
+									<p class="company-info-p">Камуфляж</p>
+								</div>
+							</div>
+						</div>
+						<div class="price-p">
+							<p>Дополнительно вы можете приобрести 100 патронов на сумму 2000 т</p>
+						</div>
+						<div class="price-money">
+							<div class="price-money-item">
+								<p class="price-block-p3">2 500 T</p>
+								<p class="price-block-p">
+									Будние дни
+								</p>
+							</div>
+							<div class="price-money-item">
+								<p class="price-block-p3">3 000 T</p>
+								<p class="price-block-p">
+									Будние дни
+								</p>
+							</div>
+						</div>
+						<div class="price-btn-wrapper">
+							<div class="price-btn-2 callme">Заказать</div>
+						</div>
+					</div>
+
+
+				</div>
+-->
+			</div>
+		</section>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <div class="pswp__container">
+            <!-- don't modify these 3 pswp__item elements, data is added later on -->
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+          </div>
+
+        </div>
+
+</div>
+		<section class="deal" >
+			<div class="deal-wrapper container" id="laser">
+				<h2 class="deal-h2"  data-aos="fade-up" data-aos-duration="1000">
+					Также предлагаем игру в Лазертаг
+				</h2>
+				<p class="deal-p" data-aos="fade-up" data-aos-duration="1000">
+					Получите новые ощущения играя в лазертаг на любой территории
+				</p>
+				<div class="deal-row">
+					<div class="deal-left">
+
+							<a class="image-popup-no-margins" >
+								<img class="deal-left-img " src="img/photo/laser3.jpg" data-fancybox="laser" data-src="img/photo/laser3.jpg" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+							</a>
+							<a class="image-popup-no-margins" >
+								<img class="deal-left-img " src="img/photo/laser1.jpg" data-fancybox="laser" data-src="img/photo/laser1.jpg" alt="" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+							</a>
+							<a class="image-popup-no-margins" >
+								<img class="deal-left-img" src="img/photo/laser2.jpg" data-fancybox="laser" data-src="img/photo/laser2.jpg" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+							</a>
+
+
+						<img class="deal-left-img" src="img/box.png" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+						<img class="deal-left-img" src="img/box.png" alt="" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1000">
+						<div class="box-border box-border1"></div>
+						<div class="box-border box-border2"></div>
+
+
+						<span class="none" data-fancybox="laser" data-src="img/photo/laser5.jpg"></span>
+						<span class="none" data-fancybox="laser" data-src="img/photo/laser6.jpg"></span>
+						<span class="none" data-fancybox="laser" data-src="img/photo/laser7.jpg"></span>
+						<span class="none" data-fancybox="laser" data-src="img/photo/laser8.jpg"></span>
+						<span class="none" data-fancybox="laser" data-src="img/photo/laser9.jpg"></span>
+						<span class="none" data-fancybox="laser" data-src="img/photo/laser10.jpg"></span>
+						<span class="none" data-fancybox="laser" data-src="img/photo/laser11.jpg"></span>
+						<span class="none" data-fancybox="laser" data-src="img/photo/laser12.jpg"></span>
+						<span class="none" data-fancybox="laser" data-src="img/photo/laser13.jpg"></span>
+					</div>
+					<div class="deal-right" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<p class="place-p">Лазертаг – реалистичная игра, которая позволяет ощутить себя солдатом на поле битвы. Игровые комплекты, как правило, являются точными копиями настоящего оружия.
+						</p>
+						<p class="place-p">Так же это игра позволяет развивать лидерские качества, тактическое мышление, стратегию в мыслях с построением рисунка игрового поединка.
+						</p>
+						<p class="place-p place-p-img" data-fancybox="laser" data-src="img/photo/laser4.jpg">Галерея лазертаг
+						</p>
+
+						<div class="price-btn-wrapper">
+							<a class="a-archer" href="#sert">
+								<div class="price-btn-2 ">Лазертаг в подарок</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="contetn2">
+					<p class="place-p1">Так в чем принцип
+					</p>
+					<p class="place-p">Лазер – это инфракрасный луч, вместо пули, а Таг это метка, то-есть датчик, нужно лучом попасть в датчик закрепленный с помощью повязки на голове игрока.
+Дальность стрельбы лазертаг-оружия может достигает 800 метров. Тагеры могут быть запрограммированы на различные режимы боя и на разное количество патронов, жизней, что в свою очередь дает возможность составлять разнообразные сценарии сражений. Звук пролетающих мимо пуль, подсветка выстрела, вибрация повязки, при попадании добавляют игре эмоций, реалистичности, азарта, которые так необходимы в подобных развлечениях.
+					</p>
+					<p class="place-p">В лазертаге нет поражающих элементов. Попадания сопровождаются только вибрацией и звуковыми эффектами – никакой боли и синяков. Минимальная травма-опасность.
+Особая привлекательность лазертага заключается в том, что это военно-спортивное приключение. Можно играть практически в любую погоду. Во время игры участники в полной мере могут почувствовать азарт и удовлетворение от победы, выплеснуть агрессию, снять стресс.
+Лазертаг-сражения можно проводить как в помещениях – школах, офисах, торговых центрах, так и на открытом пространстве – на стадионах, в лесах, в поле, в промзоне.
+В игре нет места мошенничеству. Электроника фиксирует попадание выстрела в цель и степень принесённого урона. Если игрок «поражен» в бою, его оружие отключается автоматически.
+					</p>
+					<p class="place-p1">Лазертаг и Пейнтбол На Вашей Территории
+					</p>
+					<p class="place-p">
+К Вам пришли гости, у Вас мероприятие, встреча с друзьями или корпоратив. Не хотите тратить время на доставку всех гостей на нашу площадку. Оставайтесь в моменте комфорта, закажите проведение игры лазертаг или пейнтбол на вашей территории. Мы осуществляем проведение данных игр и развлечений на выезд. Проводя такую игру Вы закрываете сразу 5 целей Физическая активность на свежем воздухе, Вызываете азарт связанный с желанием победы и проявление своих навыков, Повышаете гибкость ума, помещая себя в незнакомые и нестандартные ситуации для повседневной жизни Ваши гости не скучают и с интересом пробуют что-то новое Сохраняйте воспоминания через те яркие эмоции, которые Вы и гости получили в этот день. Жизнь – это череда воспоминаний, а им проще удержаться в нашей памяти, если они подкреплены эмоциями и событиями. Вызывая теплые чувства о проведенном дне Лазертаг - это игра не оставит равнодушных ни взрослых, ни детей. Если у вас есть от 10 соток земли или рядом с вашим домом есть парк или растительность в виде деревьев, то это уже подходящая площадка для захватывающей игры. Электронику нового поколения нельзя обмануть, она четко фиксирует все попадания по датчикам. Это как раньше в детстве, мы все играли в казаки разбойники и войнушку в своем дворе, только было сложно доказать, что из деревянной палки ты первый сказал Ттррышь и поэтому попал первый и он теперь не играет)) Лазертаг абсолютно безопасен для окружающих людей и строений, в отличие от пейнтбола , где вылетает шарик и при попадании в других не играющих людей или в здание оставляет краску. Краска конечно пищевая, без вредная и смывается обычной водой. Но лица игроков должны быть защищены специальными масками. Поэтому требований к площадке для проведения пейнтбола больше. Удаленность от людей не играющих, примерно на 70-100 метров. Не должно быть объектов инфраструктуры - дома, здания, автомобили, которые не должны быть испачканы краской при попадании. Важным моментом является то, что это недорогое удовольствие Стоимость услуги в пределах города на человека в среднем (если вас от 8 человек) от 3500 тенге до 6000 тенге за 1-2х часов игры. При индивидуальном разговоре мы постараемся подобрать оптимально сбалансированную услугу с различными бонусами. Главное для нас, не провести и быстрее уехать, а чтоб Вы и Ваши гости получили удовольствие от проведенного дня с нами. Мы предоставляем эту услугу уже более 10 лет и гордимся множеством положительных отзывов в нашем кейсе.
+						<div class="price-btn-wrapper" id="seereviews">
+							<a class="a-archer" href="#reviews">
+								<div class="price-btn-2">Посмотреть Отзывы</div>
+							</a>
+						</div>
+					<br>
+					<p class="place-p1">
+					Почему выбирают  лазертаг в нашем клубе?
+					</p>
+
+					<div class="deal-price">
+						<div class="deal-price-item">
+							<div class="deal-price-icon">
+								<i class="fas fa-check"></i>
+							</div>
+							<p>Новейшее поколение лазертаг оборудования</p>
+						</div>
+						<div class="deal-price-item">
+							<div class="deal-price-icon">
+								<i class="fas fa-check"></i>
+							</div>
+							<p><span>АК-12LT Хищник</span> имеют датчик поражения, при попадании в ваш тагер вы не сможете стрелять 5 секунд</p>
+						</div>
+						<div class="deal-price-item">
+							<div class="deal-price-icon">
+								<i class="fas fa-check"></i>
+							</div>
+							<p><span>Smart-RGB</span> обеспечивает комфорт ношения, точность фиксирования поражения, вибрацию, подсветку при попадании.</p>
+						</div>
+						<div class="deal-price-item">
+							<div class="deal-price-icon">
+								<i class="fas fa-check"></i>
+							</div>
+							<p>Принимаем игроков на лазертаг с <span>6 лет</span></p>
+						</div>
+					</div>
+
+
+				</div>
+
+
+
+			</div>
+		</section>
+		<section class="sert" id="sert">
+
+			<div class="sert-wrapper container">
+				<h2 class="info-h2" data-aos="fade-up" data-aos-duration="1000">
+					Подарочный сертификат на игру
+				</h2>
+				<div class="sert-flex">
+					<div class="sert-left">
+						<p class="info-p" data-aos="fade-up" data-aos-duration="1000">Вы можете заказать оригинальный подарок для друзей, знакомых, сотрудников, деловых партнеров - <b>подарочный сертификат на игру в Пейнтбол или <a class="a-archer laser" href="#laser">Лазертаг</a></b>. <br>Срок действия сертификата обговаривается заранее перед печатью. Держатель сертификата может выбрать любую  дату или время игры в период действия сертификата.<p>
+						<p class="info-p" data-aos="fade-up" data-aos-duration="1000">Очень актуальным и тематическим является такой подарок мужчинам и коллегам  <span class="red">на день защитника отечества 23 февраля и 7 мая</span>.<br>Также такой подарок будет необычным и интересным в <span class="red">день рождение</span>.<p>
+					<p class="info-p" data-aos="fade-up" data-aos-duration="1000">
+						А просто в виде неожиданного презента, будет супер приятным сюрпризом.
+Подарочный сертификат на игру в пейнтбол, это интересное приключение с друзьями на свежем воздухе.))<br> Можете подарить сертификаты, как на одного человека, так и на большую компанию, именные или не именные. Стоимость сертификата образуется из повседневных цен в клубе. Это 2000 тенге прокат снаряжения. В снаряжение входит все, что нужно для игры, кроме обуви! В снаряжение входит Форма(штаны, куртка), маркер(то что стреляет шариками), отличная термальная маска, перчатки для рук. Теперь когда игрок одет для стрельбы ему нужны только шарики, которые приобретаются по 10 тенге за 1 шарик. То есть 100 шаров = 1000 тенге, 200 шаров = 2000 тенге и так далее. Время игры не ограниченно, игроки могут играть на всех трех площадках клуба включая миссию захват здания. И так например вы дарите сертификат на 3000 тенге. Предъявитель этого сертификата получает все снаряжение и 100 шаров соответственно. Если вы дарите сертификат на 4000 тенге, то предъявитель получает также снаряжение, но уже 200 шаров. Время игры в пейнтбол не лимитировано и зависит только от наличия шаров, которые всегда можно докупить по 10 тенге за шарик и продолжить игру. Вы можете подарить сертификат с любым номиналом, каким пожелаете. Для компаний из 10 человек предусмотрены бесплатные бонусы)).
+					</p>
+					<p class="info-p " data-aos="fade-up" data-aos-duration="1000">
+						Подарочные сертификаты на игру в <a class="a-archer laser" href="#laser">Лазертаг</a> подходят для детей от 6 лет или для людей с очень чувствительной кожей и внутренним миром, которые не хотят чтоб в них попадали шариками, как в пейнтболе. Цена сопоставима с пейнтболом, но оплата идет по времени игры, причем действует скидка 40%  после часовой игры. Например если вы берете 2 часа <a class="a-archer laser" href="#laser">Лазертага</a>, то 2-й час из этих двух, будет со скидкой 40%.
+					</p>
+					<p class="info-p info-p-viol" data-aos="fade-up" data-aos-duration="1000">
+						Сертификаты печатаются на плотной бумаге в цвете и имеют презентабельный вид.<br>
+						Печать и доставка сертификатов бесплатна.
+					</p>
+					<p class="info-p info-p-bold" data-aos="fade-up" data-aos-duration="1000">
+						Звоните, заказывайте и ваш подарок точно оставит яркие эмоции и не забываемые воспоминания об отличном проведенном дне!
+					</p>
+
+					</div>
+					<div class="sert-right" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+						<a class="service-img-popup">
+							<img class="sert-img" src="img/photo/sert1.jpg"  data-fancybox="sert2" data-src="img/photo/sert1.jpg" >
+						</a>
+						<a class="service-img-popup">
+							<img class="sert-img" src="img/photo/sert2.jpg"  data-fancybox="sert2" data-src="img/photo/sert2.jpg">
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="shop" data-aos="fade-up" data-aos-duration="1000">
+			<div class="shop-wrapper container">
+				<h2 class="shop__h1 info-h2">Магазин пейнтбольного оборудования</h2>
+				<p class="shop__desc info-p">
+					В нашем магазине есть снаряжения и оборудования для игры в пейнтбол. Что-то есть в наличии, что-то под заказ. Больше отдаем предпочтение second hand, так как можно купить прекрасную и качественную экипировку с приличной скидкой, но также есть и новое.
+				</p>
+				<p class="shop__desc info-p">
+					Это <span class="red">одежда</span>, <span class="red">штаны</span> и <span class="red">игровые джерси для пейнтбола</span>, а также <span class="red">защита тела</span>, <span class="red">колен</span>, <span class="red">локтей</span>, которые также прекрасно подходят для других видов спорта, как лыжи, сноуборд, конки, ролики, скейт и т.д, так как удобно сидит на теле, имеет малый вес и отличную защиту.
+				</p>
+				<div class="hide-text">
+					<p class="info-p">
+						<span class="red">Маски для игры, маркеры, баллоны (композит и металл), фидера Dye rotor, Virtue</span>. Специализируемся на продаже не нового оборудования определенных марок, например Dye, Proto, Planet Eclipse, которые зарекомендовали себя надежностью и превосходными игровыми характеристиками. Это лучшая возможность играть в пейнтбол на профессиональном оборудовании при экономии от <b>40 до 60%</b>. Тем более каждый маркер, который продается проходит предпродажное ТО у техника и вы получаете полностью исправное оборудование.
+					</p>
+					<p class="info-p">
+						Наш клуб является дилером мирового пейнтбольного <b>бренда Dye</b> и вы можете заказать всю экипировку от этого бренда по каталогу.
+					</p>
+				</div>
+<!--				<div class="shop-row">-->
+<!--					<div class="radius">-->
+<!--						<i class="fas fa-chevron-down"></i>-->
+<!--					</div>-->
+<!--				</div>-->
+				<div class="shopGal" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+				<img class="service-img" src="img/shop/m1.jpg" data-fancybox="repairs" data-src="img/shop/m1.jpg">
+				<img class="service-img" src="img/shop/m2.jpg" data-fancybox="repairs" data-src="img/shop/m2.jpg">
+				<img class="service-img" src="img/shop/m3.jpg" data-fancybox="repairs" data-src="img/shop/m3.jpg">
+				<img class="service-img" src="img/shop/m4.jpg" data-fancybox="repairs" data-src="img/shop/m4.jpg">
+				<img class="service-img" src="img/shop/m5.jpg" data-fancybox="repairs" data-src="img/shop/m5.jpg">
+				<img class="service-img" src="img/shop/m6.jpg" data-fancybox="repairs" data-src="img/shop/m6.jpg">
+				<img class="service-img" src="img/shop/m7.jpg" data-fancybox="repairs" data-src="img/shop/m7.jpg">
+				<img class="service-img" src="img/shop/m8.jpg" data-fancybox="repairs" data-src="img/shop/m8.jpg">
+			</div>
+			</div>
+			
+		</section>
+		<section class="service" id="remont">
+			<!-- <img src="img/ball3.png" class="ball3"> -->
+			<div class="service-wrapper container">
+				<h2 class="info-h2" data-aos="fade-up" data-aos-duration="1000">
+					Техническое обслуживание
+				</h2>
+				<div class="service-flex">
+					<div class="service-left">
+						<p class="info-p" data-aos="fade-up" data-aos-duration="1000">Любые пневмо-системы и изделия, где есть трущиеся компоненты, нуждаются в периодическом обслуживании. Такое обслуживание производится раз в полгода либо после определенного количества выстрелов. Например для многих регуляторов электронных маркеров, это 60000 выстрелов, но если вы не достигли этого значения за пол года, то маркер все равно должен быть обслужен.<p>
+					<p class="info-p" data-aos="fade-up" data-aos-duration="1000">По своей структуре если сильно не расписывать классы маркеров принципиально отличаются между собой механические и электронные маркера. Механика, как правило используется в прокате клуба. Электронные маркера покупают люди себе в личное пользование.</p>
+					<p class="info-p" data-aos="fade-up" data-aos-duration="1000">Конечно, лично для себя лучше покупать электронный маркер. поиграв на электронике и потом взяв механику, это как играть в теннис сковородкой. Конечно вы можете вложить деньги в апгрейд механического маркера и добиться лучших ТТХ, но он никогда не станет по качеству стрельбы электронным маркером и не оправдает вложенных денег. Лучше просто купить сразу электронный маркер от знаменитых брендов в этой индустрии такие как Dye, Planet eсlipse, Luxe, Bob long, Empire. </p>
+					<p class="info-p" data-aos="fade-up" data-aos-duration="1000">В пейнтбольном клубе <strong>«Южный Крест»</strong> ремонтов всех классов маркеров, газовых систем, баллонов и фидеров занимается директор клуба. Опыт в этой сфере более 10 лет, является дилером и техником Dye. Есть опыт приема на ремонт маркеров из регионов Казахстана и даже других стран. Маркера отправляются почтой без проблем.</p>
+					</div>
+					<div class="service-right">
+						<a class="service-img-popup" >
+							<img class="service-img" src="img/photo/repairs1.jpg"  data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200" data-fancybox="repairs" data-src="img/photo/repairs1.jpg">
+						</a>
+						<a class="service-img-popup" >
+							<img class="service-img" src="img/photo/repairs2.jpg"  data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200" data-fancybox="repairs" data-src="img/photo/repairs2.jpg">
+						</a>
+
+					</div>
+				</div>
+                <div class="header-btn" data-aos="fade-up" data-aos-duration="1000">
+                    <p class="header-btn-p callme">Оставить заявку</p>
+                </div>
+			</div>
+		</section>
+		<section class="reviews" id="reviews">
+<!--			<div class="line line1">-->
+<!--				<span class="circle circle-top"></span>-->
+<!--				<div class="dotted">-->
+<!--					<span class="dot dot-top"></span>-->
+<!--					<span class="dot dot-middle-top"></span>-->
+<!--					<span class="dot dot-middle-bottom"></span>-->
+<!--					<span class="dot dot-bottom"></span>-->
+<!--				</div>-->
+<!--			</div>-->
+			<div class="reviews-wrapper container">
+				<h2 class="info-h2" data-aos="fade-up" data-aos-duration="1000">
+					Отзывы о нашем клубе
+				</h2>
+				<p class="info-p" data-aos="fade-up" data-aos-duration="1000">Отзывы взяты с Google.<br>Если Вы уже посещали наш пейнтбольный клуб, просьба написать отзыв.</p>
+
+				<div class="reviews-column">
+					<div class="reviews-item" data-aos="fade-up" data-aos-duration="1000">
+						<img class="reviews-item-ava" src="img/reviews/1.png" alt="">
+						<div class="reviews-text">
+							<p class="reviews-p3">Алексей Андарчаев</p>
+							<p class="reviews-p">Отличный клуб, очень понравилось, постоянно хожу. Спасибо большое за такую возможность, отличное здоровое хобби. Всегда приятно знать что есть такое место, которое поддержит здоровье и даст заряд духа и трезвость мышления.</p>
+						</div>
+					</div>
+					<div class="reviews-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="reviews-text">
+                            <p class="reviews-p3">Татьяна Колос</p>
+                            <p class="reviews-p">Мы устраивали нашим мальчикам сюрприз, игру в пейнтбол, нам все понравилось и мальчикам тоже . Очень приятная и внимательная женщина инструктор)))) за экипировку и за 200 шаров мы отдали по 4000 тенге. Спасибо вам большое <img class="emoji" src="img/icons/emoji1.png"/></p>
+                        </div>
+						<img class="reviews-item-ava" src="img/reviews/2.png" alt="">
+					</div>
+					<div class="reviews-item" data-aos="fade-up" data-aos-duration="1000">
+						<img class="reviews-item-ava" src="img/reviews/3.png" alt="">
+                        <div class="reviews-text">
+                            <p class="reviews-p3">Нурсултан Куралбаев</p>
+                            <p class="reviews-p">Шикарно провели время в большой компании, непередаваемые эмоции, легко можно отвлечься от текущих проблем, которые и не проблемами кажутся после)) цены шикарные, зона интересная, шарики не так уж и больно бьют)</p>
+                        </div>
+					</div>
+				</div>
+				<a href="https://www.google.com/search?sxsrf=ACYBGNRTWH_z_FXukcKTLU-nEruoFLqm-A%3A1578464108553&source=hp&ei=bHMVXovQH6GsrgTjyb7YBA&q=%D0%BF%D0%B5%D0%B9%D0%BD%D1%82%D0%B1%D0%BE%D0%BB+%D0%B2+%D0%B0%D0%BB%D0%BC%D0%B0%D1%82%D0%B5+%D1%8E%D0%B6%D0%BD%D1%8B%D0%B9+%D0%BA%D1%80%D0%B5%D1%81%D1%82&oq=%D0%BF%D0%B5%D0%B9%D0%BD%D1%82%D0%B1%D0%BE%D0%BB+%D0%B2+%D0%B0%D0%BB%D0%BC%D0%B0%D1%82%D0%B5+%D1%8E%D0%B6%D0%BD%D1%8B%D0%B9+%D0%BA%D1%80%D0%B5%D1%81%D1%82&gs_l=mobile-gws-wiz-hp.3..0i22i30.2050.25876..26444...7.0..0.284.6211.0j32j3......0....1.......8..46i362i39i275j35i362i39j46i362i39j46i39i275j35i39j0j0i131j0i3j46i39j33i160j0i13j0i13i30j0i13i5i30j0i8i13i30j33i22i29i30j0i22i10i30.jl4aG-sHNTI#lkt=LocalPoiReviews&lrd=0x38836c841ca6d14d:0xf4b085d5d073ec70,1,,,&trex=m_t:lcl_akp,rc_f:,rc_ludocids:17631739694527278192,rc_q:%25D0%259F%25D0%25B5%25D0%25B9%25D0%25BD%25D1%2582%25D0%25B1%25D0%25BE%25D0%25BB%25D1%258C%25D0%25BD%25D1%258B%25D0%25B9%2520%25D0%25BA%25D0%25BB%25D1%2583%25D0%25B1%2520%25D0%25AE%25D0%25B6%25D0%25BD%25D1%258B%25D0%25B9%2520%25D0%259A%25D1%2580%25D0%25B5%25D1%2581%25D1%2582,ru_q:%25D0%259F%25D0%25B5%25D0%25B9%25D0%25BD%25D1%2582%25D0%25B1%25D0%25BE%25D0%25BB%25D1%258C%25D0%25BD%25D1%258B%25D0%25B9%2520%25D0%25BA%25D0%25BB%25D1%2583%25D0%25B1%2520%25D0%25AE%25D0%25B6%25D0%25BD%25D1%258B%25D0%25B9%2520%25D0%259A%25D1%2580%25D0%25B5%25D1%2581%25D1%2582" data-aos="fade-up" data-aos-duration="1000" target="_blank" class="reviews-more">Посмотреть все отзывы
+						</a>
+			</div>
+		</section>
+		<section class="callback">
+			<div class="callback-wrapper container">
+				<div class="callback-left" data-aos="fade-up" data-aos-duration="1000">
+					<div class="callback-form">
+						<img src="img/icons/callback.png" alt="">
+						<h3 class="callback-h3">Заказать пейнтбол</h3>
+						<p class="callback-p">Заполните форму и наш специалист свяжется с вами в ближайшее время</p>
+						<form action="" id="fallen-form">
+
+							<input type="hidden" name="project_name" value="Paintball">
+							<input type="hidden" name="admin_email" value="feroxdancer@mail.ru">
+							<input type="hidden" name="email_from" value="info@paintball-almaty.kz">
+							<input type="hidden" name="form_subject" value="Новая заявка с сайта paintball-almaty.kz">
+
+							<div class="form-row">
+								<div class="form-column">
+									<input type="text" name="Имя клиента" placeholder="Имя">
+									<input type="text" name="Телфон клиента" class="phone" placeholder="Телефон">
+								</div>
+								<div class="form-column">
+									<input type="number" name="Примерное кол-во человек" min="0" placeholder="Примерное количество человек">
+									<input type="text" name="Почта клиента" placeholder="E-mail">
+								</div>
+							</div>
+							<textarea name="Сообщение" id="" placeholder="Сообщение"></textarea>
+							<input type="submit" class="callback-btn-p">
+						</form>
+					</div>
+				</div>
+				<div class="callback-right" id="map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Afa729f06adc8946d30f68a6a89bfa7659b2340181b1950756a3115a89f85a04d&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                </div>
+			</div>
+		</section>
+	</main>
+	<footer id="contacts">
+		<div class="footer-wrapper container">
+			<div class="footer-top">
+				<div class="logo" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+					<img class="logo-img" src="img/logotip.png" alt="Пейнтбол в Алматы">
+				</div>
+				<div class="topHeaderMenu" data-aos="fade-down" data-aos-duration="1000">
+					<div class="header-icons">
+                        <a target="_blank" href="https://www.instagram.com/paintball.almaty/"><i class="fab link fa-instagram"></i></a>
+						<a target="_blank" href="https://api.whatsapp.com/send?phone=77003001010">
+						<i class="fab link fa-whatsapp"></i>
+					</a>
+					</div>
+					<div class="header-address">
+						<div class="header-address-left">
+							<i class="fas fa-map-marker-alt"></i>
+						</div>
+						<div class="header-address-right">
+							<p class="header-p3">Адрес</p>
+							<a class="a-archer header-p2" href="#map">г. Алматы, мкр. Кулагер, Омарова 47а</a>
+						</div>
+					</div>
+					<div class="header-phone">
+						<div class="header-phone-left">
+							<img class="header-ic" src="img/icons/call-header.svg">
+							<img class="header-ic" src="img/icons/whatsapp-header.svg">
+						</div>
+						<div class="header-phone-right">
+							<p class="header-p3">Телефон</p>
+							<a href="tel:+77019908591" class="header-p-phone">+7 701 990 85 91</a>
+							<a href="tel:+77003001010" class="header-p-phone">+7 700 300 10 10 (whatsapp)</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>«Южный Крест» © 2020<br>Все права защищены.</p>
+				
+			</div>
+		</div>
+	</footer>
+	<script src="lib/jquery-3.4.1.min.js" ></script>
+	<script src="slick/slick.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="lib/jquery.maskedinput.min.js" ></script>
+	<script src="lib/magnific-popup/jquery.magnific-popup.min.js" ></script>
+	<!-- Core JS file -->
+	<script src="lib/PhotoSwipe/photoswipe.min.js"></script>
+	<!-- UI JS file -->
+	<script src="lib/PhotoSwipe/photoswipe-ui-default.min.js"></script>
+	<!-- -->
+	<script  src="lib/fancybox/jquery.fancybox.min.js"></script>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
